@@ -1,1 +1,5 @@
 *.Rmd
+*.json
+docs/.Rproj.user/
+borrador-ingles.html
+borrador español.html
