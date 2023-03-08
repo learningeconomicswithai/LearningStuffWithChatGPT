@@ -276,6 +276,10 @@ text-align: center;
           their analytical skills by doing the work themselves. ChatGPT
           can be used to assist and complement their learning but should
           not be used as a replacement for the student’s own work.</p>
+          <h1 id="using-chatgpt-to-help-you-with-exercises-in-economics-involving-optimization-utility-maximization-profit-maximization-etc.">Using
+          ChatGPT to help you with exercises in Economics involving
+          Optimization (Utility maximization, Profit maximization,
+          etc).</h1>
           <div class="blackbox">
           <p>The golden proof that most be wanting to do is to ask
           ChatGPT to help in some demonstrations or solving math
@@ -450,6 +454,179 @@ text-align: center;
           stoped completely, which I guess was due to internet
           connection trouble. However, you can already see that it was
           taking us nowhere, so this is definitely a fail.</p>
+          </div>
+          <div class="blackbox">
+          <p>Now, let’s see how well does it help you solving problems
+          that deviate a little from the most common cases. For
+          instance, the derivation of the marshallian demands in a
+          utility maximization problem through al lagrangian only makes
+          sense if certain conditions are met. Otherwise, calculus does
+          not apply, and you should search for the optimum analytically
+          or through graphical methods. Lets see how ChatGPT does with
+          the simplest of this cases (simple enough for it to appear in
+          textbooks): the derivation of marshallian demands for a
+          perfect substitutes utility function. First, lets see if it
+          can verify a correct logic. For instance, if you wan’t to
+          check if your answer is plausible or makes sense.</p>
+          </div>
+          <p><a href="mailto:learningeconomicswithai@gmail.com" class="email">learningeconomicswithai@gmail.com</a> is the
+          solution to the maximization of utility of the form U = x + y
+          subject to the bugdet constrain M = p1<em>x + p2</em>y (where
+          M is income, p1 is the price of good x, p2 is the price of
+          good y, and x is the quantity of good x to be consumed, while
+          y is the quantity of good y to be consumed) a corner
+          solution?</p>
+          <p>ChatGPT:</p>
+          <p>The solution to the utility maximization problem of the
+          form U = x + y subject to the budget constraint M = p1x + p2y
+          is a corner solution.</p>
+          <p>In this problem, the individual is trying to maximize their
+          utility by consuming goods x and y subject to their budget
+          constraint (income). The budget constraint represents the
+          amount of money the individual has to spend on goods x and y,
+          and the prices of the goods are represented by p1 and p2. The
+          individual’s goal is to consume the right combination of x and
+          y such that their utility is maximized.</p>
+          <p>A corner solution refers to a point on the budget
+          constraint where the individual is consuming all of one good
+          and none of the other. In this case, it’s a point where the
+          individual is either consuming all of good x and none of good
+          y or all of good y and none of good x. This is because the
+          utility function is linear, so the marginal utility is
+          constant and does not depend on the level of consumption of
+          the goods.</p>
+          <p>In this case, the corner solution is the point where the
+          budget constraint is tangent to the highest attainable
+          indifference curve, which means that the individual is
+          spending all of their budget on one good, and the slope of the
+          budget constraint is equal to the slope of the indifference
+          curve.</p>
+          <div class="blackbox">
+          <p>Interesting. It indeed understands that it is a different
+          case. However, that is a still a standard problem. How about
+          if we pass it a non-conventional constrain, to see if it knows
+          that it has to use some linear programing method (like first
+          deriving the relevant constrain set graphically, to see where
+          the possible candidate solutions could be) to solve it.</p>
+          </div>
+          <p><a href="mailto:learningeconomicswithai@gmail.com" class="email">learningeconomicswithai@gmail.com</a> what would
+          change if, additional to the budget constrain, i would add the
+          constrain that x cannot be lower than 0.2*( M / p1) ? what
+          would be the marshallian demands for this new problem?</p>
+          <p>ChatGPT:</p>
+          <p>If you add the constraint that x cannot be lower than
+          0.2*(M / p1) to the utility maximization problem, the
+          Marshallian demands for x and y will change.</p>
+          <p>The Marshallian demand refers to the optimal consumption
+          bundle that an individual would choose given their budget
+          constraint and their preferences. In this case, the new
+          constraint means that the individual must consume at least a
+          certain amount of good x, which affects the optimal
+          consumption bundle they will choose.</p>
+          <p>To find the Marshallian demands, you would need to solve
+          the utility maximization problem subject to the new
+          constraint. One way to do this is by using the Lagrange method
+          of multipliers.</p>
+          <p>First, you would need to form the Lagrangian function by
+          adding a Lagrange multiplier term to the utility function and
+          the constraints. The Lagrangian function would be: L(x,y,λ) =
+          x + y + λ(M - p1x - p2y) + μ(0.2*(M/p1) - x)</p>
+          <p>Then you would need to find the partial derivatives of the
+          Lagrangian function with respect to x, y and λ and set them to
+          zero. You would get:</p>
+          <p>∂L/∂x = 1 - λp1 + μ = 0 ∂L/∂y = 1 - λp2 = 0 ∂L/∂λ = M - p1x
+          - p2y = 0 ∂L/∂μ = 0.2*(M/p1) - x = 0</p>
+          <p>Solving for x and y, you would get: x = 0.2 * (M / p1) and
+          y = (M - 0.2p1M) / p2</p>
+          <p>This means that the individual will consume at least
+          0.2*(M/p1) units of good x, and the remaining budget will be
+          used to consume good y.</p>
+          <p>It’s important to note that this is just one possible
+          solution, and that it may not be unique and that there might
+          be other solutions under different assumptions or
+          conditions.</p>
+          <div class="redbox">
+          <p>The funny and sad thing is that it presents its mistakes so
+          confidently and so seemingly logically, that a completely lost
+          student would believe this was the correct answer. However,
+          first, if you check the FOC, you see that ChatGPT here used a
+          normal lagrangian, instead of the kuhn tucker equation.
+          Therefore, it is forcing both constrains to be met with
+          equality. This when one of them is only an inequality
+          constrain. Second, as stated, conditions are not met to find
+          the optimum using calculus. Therefore, even though it arrived
+          at an answer, you can check it is not the correct one.</p>
+          </div>
+          <div class="yellowbox">
+          <p>There is no way to make ChatGPT do all the calculations for
+          you on this. You certainly have to guide it a little. However,
+          to see how ChatGPT can be used through prompt engineering to
+          make some long and tedious steps for you, or to see how
+          manually solve this microeconomics exercise, contact me for a
+          private class. My contact info is down below.</p>
+          </div>
+          <div class="blackbox">
+          <p>Finally, lets see if it can detect also the right
+          optimization method for a non-convex utility function (which,
+          again, would result in a corner solution).</p>
+          </div>
+          <p><a href="mailto:learningeconomicswithai@gmail.com" class="email">learningeconomicswithai@gmail.com</a> lets go
+          back to the first problem (before i told you about the second
+          constrain), but lets change the utility function to U = (x^2)
+          + (y^2). Are the solutions for x and y interior or corner?</p>
+          <p>ChatGPT:</p>
+          <p>If we change the utility function to U = (x^2) + (y^2) and
+          go back to the original problem of maximizing utility subject
+          to the budget constraint M = p1x + p2y, the solutions for x
+          and y will be interior.</p>
+          <p>In this case, the utility function is a quadratic function,
+          which means that the marginal utility of x and y will change
+          as the level of consumption changes.</p>
+          <p>An interior solution is a point where the individual is
+          consuming positive amounts of both goods x and y, and the
+          budget constraint is tangent to an indifference curve. This
+          means that the individual is not consuming all of their budget
+          on one good, and the slope of the budget constraint is equal
+          to the slope of the indifference curve.</p>
+          <p>In order to find the optimal solution for x and y, you
+          would need to solve the utility maximization problem subject
+          to the budget constraint by setting the partial derivatives of
+          the utility function with respect to x and y to zero and
+          solving for x and y.</p>
+          <p>It’s important to note that this is just one possible
+          solution, and that it may not be unique and that there might
+          be other solutions under different assumptions or
+          conditions.</p>
+          <div class="redkbox">
+          <p>As you see, it failed to see that it was a corner solution.
+          Also, seeing the logical part of the reasoning, you can see
+          it’s incomplete. It says “In this case, the utility function
+          is a quadratic function, which means that the marginal utility
+          of x and y will change as the level of consumption changes.”.
+          Yes, that’s true. But the problem is that the marginal utiluty
+          of x and y change in a way that, the more of one good you
+          have, the greater the valuation of that good becomes, as
+          measured by the RMS of the other good for that good (the ratio
+          of marginal utilities). And if the more you have of something,
+          the more valuable the next unit brings, then you won’t stop
+          buying more of that good (and less from the other) until you
+          get to a corner solution.</p>
+          </div>
+          <div class="yellowbox">
+          <p>But once again, that does not mean that ChatGPT can’t be
+          used at all in this problem. It will need your guidance on
+          what it will be searching, but if properly given, it will cut
+          you work, or help you validate the internal consistency of an
+          answer. The important thing here is that you need to forget
+          the idea that ChatGPT will think for you. Instead, it will
+          make it easier for you to learn, and it will materialize
+          easily your ideas. But if those ideas are plain wrong, it
+          won’t be doing much to correct them. Garbage in, garbage
+          out.</p>
+          <p>To see how ChatGPT can be used through prompt engineering
+          to make some long and tedious steps for you, or to see how
+          manually solve this microeconomics exercise, contact me for a
+          private class. My contact info is down below.</p>
           </div>
           <h1 id="how-good-is-chatgpt-to-do-some-computational-mathematics">How
           good is ChatGPT to do some computational mathematics?</h1>
